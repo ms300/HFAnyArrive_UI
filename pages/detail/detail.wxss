@@ -1,0 +1,122 @@
+
+
+.card {
+  position: relative;
+  top:50px;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  margin: 0rem;
+  margin-top:20px;
+  margin-bottom:10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width:100%;
+  z-index:1;
+}
+
+.refreshView{
+  float: right;
+  margin-right:50px;
+  margin-top:18px;
+  font-size: 16px;
+}
+
+
+.titleView{
+  position:absolute;
+  margin-top:50px;
+  font-size: 28px;
+  width: 100%;
+  line-height: 41px;
+  color: #1976D2;
+  text-align: center;
+  font-family: Roboto;
+
+}
+
+.busInfo{
+  height: 400px;
+}
+
+.small_icon{
+  height: 26px;
+  width:  26px;
+  margin-right: 8px;
+}
+
+
+.tiny_icon{
+  position: absolute;
+  height: 24px;
+  width:  24px;
+  margin-left:10px;
+}
+
+.SSTATION{
+  position: absolute;
+  left: 20px;
+  top: 130px;
+  line-height: 26px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 18px;
+  font-family: Roboto;
+  float:left;
+
+}
+
+.FSTATION{
+  position: absolute;
+  top: 130px;
+  right:20px;
+  line-height: 26px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 18px;
+  font-family: Roboto;
+  float:right;
+
+}
+
+
+.center-big-text{
+  position: absolute;
+  bottom:25px;
+  text-align: center;
+  width: 100%;
+  font-size: 22px;
+}
+
+.center-text{
+  position: absolute;
+  bottom:70px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+.buslist{
+  margin-top:190px;
+}
+
+.busitem{
+ padding-bottom: 40px;
+}
+
+.leftstation{
+  float:left;
+  margin-left:20px;
+  font-size: 15px;
+}
+
+.leftdistance{
+  float:right;
+  margin-right:30px;
+  font-size: 15px;
+}
+
+.tiny_icon_2{
+  display: inline-block;
+  height: 24px;
+  width:  24px;
+  margin-right:20px;
+  vertical-align: -6px;
+}

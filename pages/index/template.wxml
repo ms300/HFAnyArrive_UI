@@ -1,0 +1,58 @@
+<template name="stationInfo">
+  <view class="stationInfo card cd-timeline">
+
+    <view class="flex-row infoBanner red-point" style="display: flex;flex-direction: row;">
+      <view class="flex-view-item stationName">
+            <text> {{stationname}} </text>
+      </view>
+      <view class="flex-view-item updateTime">
+            <text> {{updatetime}}更新</text>
+      </view>
+    </view>
+    
+    <view wx:for="{{buslist}}">
+      <view class="flex-row infoContent red-point2" style="display: flex;flex-direction: row;">
+        <view class="flex-view-item LineName">
+          <text> {{item.linename}} </text>
+        </view>
+        <view class="flex-view-item">
+
+          <view class="txtGo">
+            <text> 开往{{item.finalstation}} </text>
+          </view>
+          <view class="txtNext">
+            <text> 下一站 {{item.nextstation}} </text>
+          </view>
+        </view>
+        <view class="flex-view-item txtRight">
+          
+          <view class="txtLefttime">
+            <text> {{item.lefttime}} </text>
+          </view>  
+          <view class="txtLeftstation">
+            <text> {{item.leftstation}} </text>
+          </view>  
+
+        </view> 
+
+        <view class="flex-view-item">
+          <view class="rightArrow">
+            <navigator url="../detail/detail?linename={{item.linename}}&fstation={{item.finalstation}}&currentstation={{stationname}}&nextstation={{item.nextstation}}">
+              <image src="../../icon/right.png" class="rightArrowImg"></image>
+            </navigator>
+          </view>
+        </view>
+
+
+      </view>
+      <hr class="line1"/>  
+    </view>
+  </view>
+</template>
+
+
+<template name="busInfo">
+  <view class="stationInfo card cd-timeline">
+
+  </view>
+</template>

@@ -1,0 +1,35 @@
+<!--pages/predict/predict.wxml-->
+<view class="busPredict card">
+  <view class="section flex-row">
+    <text class="flex-view-item">线路号:</text>
+    <input id="linename" class="flex-view-item right" bindchange="lineChange" placeholder='226'></input>
+  </view>
+
+  <view class="section flex-row">
+    <picker class="flex-view-item right"  bindchange="bindPickerChange1" value="{{index1}}" range="{{stations}}">
+      <view class="picker">
+       出发站点: {{stations[index1]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section flex-row">
+    <picker class="flex-view-item right"  bindchange="bindPickerChange2" value="{{index2}}" range="{{stations}}">
+      <view class="picker">
+       到达站点:{{stations[index2]}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="section flex-row">
+    <picker class="flex-view-item right"  mode="time" value="{{time}}" start="00:00" end="24:00" bindchange="bindTimeChange">
+      <view class="picker">
+         出发时间:{{time}}
+      </view>
+    </picker>
+  </view>
+
+  <button type="primary" bindtap="predict" class="btnPredict">预测</button>
+  <text class="result">{{predict_data}}</text>
+  <text class="desc_text">程序采用机器学习进行预测，将有效考虑高峰时刻和周末等因素，精确度在1~2min以内。</text>
+</view>

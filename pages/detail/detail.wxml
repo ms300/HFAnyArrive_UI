@@ -1,0 +1,5 @@
+<!--logs.wxml-->
+<import src="template.wxml"/>
+<view wx:if="{{show_result==1}}">
+  <template is="busInfo" data="{{...bus_data}}"/>
+</view>

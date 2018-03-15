@@ -1,0 +1,44 @@
+<template name="busInfo">
+  <view class="busInfo card">
+
+    <view class="flex-row refreshView" bindtap='freshBtn'>
+      <text> {{updatetime}}</text>
+      <image class="tiny_icon" src="../../icon/refresh.png"></image>
+    </view>
+    <view class="flex-row titleView">
+      <image class="small_icon" src="../../icon/bus_1.png"></image>
+      <text> {{linename}}</text>
+    </view>
+
+    <view class="flex-row">
+      <view class="flex-view-item SSTATION">
+        <text>{{sstation}}</text>
+      </view>
+      <view class="flex-view-item FSTATION">
+        <text>{{fstation}}</text>
+      </view>
+    </view>
+    <view class="buslist">
+      <view wx:for="{{buslist}}">
+        <view class="flex-row busitem">
+          <view class="flex-view-item leftstation">
+            <image class="tiny_icon_2" src="../../icon/bus.png"></image>
+            <text> 即将到达{{item.leftstation}} </text>
+          </view>
+          <view class="flex-view-item leftdistance">
+            <text> {{item.leftdistance}} </text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+    <view class="flex-row center-text">
+        <text>{{additional_info}}</text>
+    </view>
+    <view class="flex-row center-big-text">
+        <text>下一站 {{nextstation}}</text>
+    </view>
+
+  </view>
+</template>

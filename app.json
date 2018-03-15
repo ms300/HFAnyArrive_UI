@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/navi/navi",
+    "pages/about/about",
+    "pages/predict/predict",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "selectedColor": "#3cc51f",
+    "nouse":{
+      "pagePath": "pages/navi/navi",
+      "text": "导航",
+      "iconPath": "icon/0/map.png",
+      "selectedIconPath": "icon/1/map.png"
+    },
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "查询",
+        "iconPath":"icon/0/search.png",
+        "selectedIconPath": "icon/1/search.png"
+      },
+      {
+        "pagePath": "pages/predict/predict",
+        "text": "预测",
+        "iconPath": "icon/0/predict.png",
+        "selectedIconPath": "icon/1/predict.png"
+      },{
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "icon/0/code.png",
+        "selectedIconPath": "icon/1/code.png"
+      }
+
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "合肥准时达",
+    "navigationBarTextStyle":"black"
+  }
+}
+
